@@ -25,27 +25,25 @@
           <i class="fa-solid fa-location-dot"></i>
         </div>
         <form action="" method="get" class="form">
-          <div class="form">
-            <input type="text" placeholder="Marseille, France" required />
-            <input type="submit" value="Rechercher" />
-          </div>
+          <input type="text" placeholder="Marseille, France" required />
+          <input type="submit" value="Rechercher" />
         </form>
       </div>
       <div class="filterWrap">
         <p>Filtres</p>
-        <div class="ecoFilter">
+        <div class="filterItem">
           <i class="fa-solid fa-money-bill-wave"></i>
           <p>Économique</p>
         </div>
-        <div class="familyFilter">
+        <div class="filterItem">
           <i class="fa-solid fa-person"></i>
           <p>Familial</p>
         </div>
-        <div class="romanticFilter">
+        <div class="filterItem">
           <i class="fa-solid fa-heart"></i>
           <p>Romantique</p>
         </div>
-        <div class="animalsFilter">
+        <div class="filterItem">
           <i class="fa-solid fa-dog"></i>
           <p>Animaux autorisés</p>
         </div>
@@ -70,7 +68,7 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star greyStar"></i>
               </div>
             </a>
             <a class="card" href="#">
@@ -97,7 +95,7 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star greyStar"></i>
               </div>
             </a>
             <a class="card" href="#">
@@ -108,8 +106,8 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star greyStar"></i>
+                <i class="fa-solid fa-star greyStar"></i>
               </div>
             </a>
             <a class="card" href="#">
@@ -124,7 +122,7 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star greyStar"></i>
               </div>
             </a>
             <a class="card" href="#">
@@ -142,7 +140,7 @@
           </div>
           <p>Afficher plus</p>
         </div>
-        <div class="populariyWrap">
+        <div class="popularityWrap">
           <div class="popularityTitle">
             <h2>Les plus populaires</h2>
             <i class="fa-solid fa-chart-line"></i>
@@ -153,24 +151,51 @@
                 src="img/hebergements/hotelLeSoleilDuMatin.jpg"
                 alt="hotelSoleilMatin"
               />
-              <p>Hôtel Le soleil du matin</p>
-              <p>Nuit à partir de <span>128 €</span></p>
+              <div class="popularityCardText">
+                <p>Hôtel Le soleil du matin</p>
+                <p>Nuit à partir de <span>128 €</span></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
             </a>
             <a class="popularityCard" href="#">
               <img
                 src="img/hebergements/AuCoeurDeLeau.jpg"
                 alt="hotelSoleilMatin"
               />
-              <p>Au cœur de l'eau Chambres d'hôtes</p>
-              <p>Nuit à partir de <span>71 €</span></p>
+              <div class="popularityCardText">
+                <p>Au cœur de l'eau Chambres d'hôtes</p>
+                <p>Nuit à partir de <span>71 €</span></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star greyStar"></i>
+                </div>
+              </div>
             </a>
             <a class="popularityCard" href="#">
               <img
                 src="img/hebergements/HotelToutBleu.jpg"
                 alt="hotelSoleilMatin"
               />
-              <p>Hôtel Tout bleu et Blanc</p>
-              <p>Nuit à partir de <span>68 €</span></p>
+              <div class="popularityCardText">
+                <p>Hôtel Tout bleu et Blanc</p>
+                <p>Nuit à partir de <span>68 €</span></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star greyStar"></i>
+                </div>
+              </div>
             </a>
           </div>
         </div>
@@ -182,14 +207,16 @@
             <img src="img/activites/VieuxPort.jpg" alt="vieuxPort" />
             <p>Vieux Port</p>
           </a>
-          <a class="activityCard" href="#">
-            <img src="img/activites/FortPomegues.jpg" alt="fortPomegues" />
-            <p>Fort de Pomègues</p>
-          </a>
-          <a class="activityCard" href="#">
-            <img src="img/activites/IleDuFrioul.jpg" alt="ileFrioul" />
-            <p>Îles du Frioul</p>
-          </a>
+          <div class="group">
+            <a class="activityCard" href="#">
+              <img src="img/activites/FortPomegues.jpg" alt="fortPomegues" />
+              <p>Fort de Pomègues</p>
+            </a>
+            <a class="activityCard" href="#">
+              <img src="img/activites/IleDuFrioul.jpg" alt="ileFrioul" />
+              <p>Îles du Frioul</p>
+            </a>
+          </div>
           <a class="activityCard" href="#">
             <img
               src="img/activites/ParcNationalCalanques.jpg"
@@ -197,14 +224,16 @@
             />
             <p>Parc National des Calanques</p>
           </a>
-          <a class="activityCard" href="#">
-            <img src="img/activites/NotreDame.jpg" alt="notreDame" />
-            <p>Notre-Dame-de-la-Garde</p>
-          </a>
-          <a class="activityCard" href="#">
-            <img src="img/activites/ParcLongchamp.jpg" alt="parcLongchamp" />
-            <p>Parc Longchamp</p>
-          </a>
+          <div class="group">
+            <a class="activityCard" href="#">
+              <img src="img/activites/NotreDame.jpg" alt="notreDame" />
+              <p>Notre-Dame-de-la-Garde</p>
+            </a>
+            <a class="activityCard" href="#">
+              <img src="img/activites/ParcLongchamp.jpg" alt="parcLongchamp" />
+              <p>Parc Longchamp</p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -219,6 +248,11 @@
         <h3>Nos hébergements</h3>
         <p>Charte qualité</p>
         <p>Soumettre votre hôtel</p>
+      </div>
+      <div class="footerItem">
+        <h3>Assistance</h3>
+        <p>Centre d'aide</p>
+        <p>Nous contacter</p>
       </div>
     </footer>
   </body>
