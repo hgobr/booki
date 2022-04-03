@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script
-      src="https://kit.fontawesome.com/3687f68844.js"
-      crossorigin="anonymous"
-    ></script> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
@@ -16,11 +12,14 @@
     <title>Booki</title>
   </head>
   <body>
-    <header><img src="img/logos/Booki.png" alt="bookiLogo" /></header>
-    <nav>
-      <a href="#">Hébergements</a>
-      <a href="#">Activités</a>
-    </nav>
+    <header>
+      <img src="img/logos/Booki.png" alt="bookiLogo" />
+
+      <nav>
+        <a href="#">Hébergements</a>
+        <a href="#">Activités</a>
+      </nav>
+    </header>
     <div class="content">
       <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
       <p>En plein centre ville ou en pleine nature</p>
@@ -30,7 +29,10 @@
         </div>
         <form method="get" class="form">
           <input type="text" placeholder="Marseille, France" required />
-          <input type="submit" value="Rechercher" />
+          <button class="searchButton searchText">Rechercher</button>
+          <button class="searchButton searchIcon">
+            <i class="fas fa-search"></i>
+          </button>
         </form>
       </div>
       <div class="filterWrap">
@@ -56,7 +58,7 @@
         <i class="fas fa-info"></i>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
-      <div class="accomodationWrap">
+      <section class="accomodationWrap">
         <div class="accomodation">
           <h2>Hébgerements à Marseille</h2>
           <div class="cardWrap">
@@ -203,7 +205,7 @@
             </a>
           </div>
         </div>
-      </div>
+      </section>
       <div class="activityWrap">
         <h2>Activités à Marseille</h2>
         <div class="activityCardWrap">
