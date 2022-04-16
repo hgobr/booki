@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -188,7 +189,7 @@ p {
   font-size: 13px;
 }
 
-.accomodationWrap {
+#accomodationWrap {
   display: flex;
   gap: 35px;
 }
@@ -336,8 +337,9 @@ p {
   color: var(--blue01);
   font-size: 12px;
 }
-.activityWrap {
-  margin-top: 3rem;
+
+#activityWrap {
+  padding-top: 3rem;
   margin-bottom: 3rem;
 }
 
@@ -467,7 +469,7 @@ footer {
 }
 
 @media (max-width: 1400px) {
-  .accomodationWrap {
+  #accomodationWrap {
     gap: 15px;
   }
 
@@ -588,7 +590,7 @@ footer {
     width: 100%;
   }
 
-  .accomodationWrap {
+  #accomodationWrap {
     flex-direction: column-reverse;
     align-items: center;
   }
@@ -610,7 +612,7 @@ footer {
     padding: 15px;
   }
 
-  .activityWrap h2 {
+  #activityWrap h2 {
     margin-bottom: 35px;
   }
 
