@@ -544,7 +544,17 @@ footer {
   }
 
   nav {
+    margin-top: 10px;
     margin-bottom: 30px;
+    width: 100%;
+    gap: 0;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid var(--grey);
+    padding-bottom: 10px;
   }
 
   nav a::after {
